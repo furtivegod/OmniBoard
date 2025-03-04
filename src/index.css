@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .active__style {
+    @apply bg-blue-500 shadow-blue-400 shadow-md text-white;
+  }
+  .buttonHover {
+    @apply bg-blue-100 text-blue-500;
+  }
+  .th__style {
+    @apply normal-case py-4 px-11 text-gray-600 text-xl font-semibold;
+  }
+  .dth__style {
+    @apply normal-case py-4 px-11 text-xl font-semibold;
+  }
+  .scheduleImg__style {
+    @apply w-14 h-14 rounded-full border-2 border-solid border-white -ml-4 cursor-pointer transition-all duration-500 ease-out hover:scale-105 hover:-mt-1;
+  }
+  .filterActive__style {
+    @apply text-white bg-blue-500;
+  }
+  .filterUnActive__style {
+    @apply text-gray-500 bg-white;
+  }
+  .filterHover__style {
+    @apply text-blue-600 bg-blue-100;
+  }
+  .label__style {
+    @apply font-normal text-xl text-gray-600;
+  }
+  .input__style {
+    @apply border border-gray-200 border-solid focus:border-blue-400 rounded-lg text-gray-600 text-xl px-5 py-4;
+  }
+  .button__style {
+    @apply w-full flex items-center text-gray-600 gap-2 pl-6 py-4 text-xl;
+  }
+  .sortIcon__style {
+    @apply w-6 h-6 text-gray-600 inline-block ml-2 transition duration-150 ease-in;
+  }
+  .error__style {
+    @apply text-red-500 inline-block pt-2 text-lg;
+  }
+  .detailsP__style {
+    @apply text-gray-500 font-normal text-xl mb-2.5 normal-case;
+  }
+  .secButton__style {
+    @apply rounded-lg text-2xl bg-blue-600 font-medium text-white normal-case hover:shadow-md hover:shadow-blue-400 cursor-pointer;
+  }
+  .activeNav {
+    @apply rounded-lg bg-blue-500 font-medium text-white normal-case shadow-lg shadow-blue-200;
+  }
+  .unActiveNav {
+    @apply font-medium text-gray-600 normal-case;
+  }
+}
+
+.lightBox_bg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+#norton-idsafe-field-logo-imgId {
+  display: none;
+}
+
+html {
+  font-size: 50%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScrollBar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.myScroll:hover::-webkit-scrollbar-thumb {
+  background-color: #b8b8b8;
+}
+
+.myScroll::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.myScroll::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.myScroll::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 5rem;
+}
+
+.menu__logo .circles::before {
+  content: "";
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 0.2rem solid rgb(37, 99, 235);
+  border-radius: 50%;
+}
+
+.closeModule {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.openModule {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.menu__container {
+  height: calc(100% - 6rem);
+}
+
+.inputContainer {
+  height: calc(100% - 4.5rem);
+}
+
+.checkbox:checked + .custom__checkbox {
+  background-color: rgba(6, 21, 153, 0.6);
+  border-color: rgba(6, 21, 153, 0.6);
+  box-shadow: 0 0.5rem 1rem rgba(6, 21, 153, 0.3);
+}
+
+.toggleBtn {
+  background-color: rgba(209, 213, 219, 1);
+}
+
+.toggleBtn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.3rem;
+  transform: translateY(-50%);
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+.toggleCheck:checked + .toggleBtn::before {
+  left: 56%;
+}
+
+.toggleCheck:checked + .toggleBtn {
+  background-color: rgba(59, 130, 246, 1);
+}
+
+@media (min-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (min-width: 1315px) {
+  html {
+    font-size: 62.5%;
+  }
+}
