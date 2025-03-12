@@ -10,7 +10,6 @@ const store = configureStore({
     }),
 
     reducer:{
-        users: adminReducer
     }
 })
 
